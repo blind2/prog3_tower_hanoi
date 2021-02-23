@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tower_of_hanoi", "tower_of_hanoi.vcxproj", "{8F88D4A9-28BD-47D1-A29D-8DE26BF45C07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F88D4A9-28BD-47D1-A29D-8DE26BF45C07}.Debug|x64.ActiveCfg = Debug|x64
+		{8F88D4A9-28BD-47D1-A29D-8DE26BF45C07}.Debug|x64.Build.0 = Debug|x64
+		{8F88D4A9-28BD-47D1-A29D-8DE26BF45C07}.Debug|x86.ActiveCfg = Debug|Win32
+		{8F88D4A9-28BD-47D1-A29D-8DE26BF45C07}.Debug|x86.Build.0 = Debug|Win32
+		{8F88D4A9-28BD-47D1-A29D-8DE26BF45C07}.Release|x64.ActiveCfg = Release|x64
+		{8F88D4A9-28BD-47D1-A29D-8DE26BF45C07}.Release|x64.Build.0 = Release|x64
+		{8F88D4A9-28BD-47D1-A29D-8DE26BF45C07}.Release|x86.ActiveCfg = Release|Win32
+		{8F88D4A9-28BD-47D1-A29D-8DE26BF45C07}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63E8508E-2D49-42F2-8E0F-9FABDA3424C4}
+	EndGlobalSection
+EndGlobal

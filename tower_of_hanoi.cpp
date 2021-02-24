@@ -19,14 +19,13 @@ int main()
     tower1.addHanoi(hanoiSmall); 
     Tower towertab[3]{ tower1, tower2, tower3 };
 
-
     for (int i = 0; i < 3; i++)
     {
         towertab[i].show();
     }
 
 
-    while (!towertab[0].checkCombinaison() || !towertab[1].checkCombinaison() || !towertab[2].checkCombinaison())
+    while (true)
     {
         std::cout << "Choisir une chiffre de 0 a 2: " << "\n";
         std::cout << "Tour de depart: " << "\n";
@@ -38,7 +37,7 @@ int main()
         {
             if (!towertab[start].empty()|| !towertab[end].empty())
             {
-                if (towertab[start].top()< towertab[end].top()) //
+                if (towertab[start].top()< towertab[end].top())
                 {
                     towertab[end].addHanoi(towertab[start].top());
                     towertab[start].removeHanoi();
@@ -49,6 +48,11 @@ int main()
                     {
                         towertab[i].show();
                     }
+
+                    if (towertab[end].checkCombinaison() == true)
+                    {
+                        break; 
+                    }  
                 }                                  
             }
         }        

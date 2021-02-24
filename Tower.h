@@ -6,7 +6,6 @@
 class Tower
 {
 private:
-	int combinaisonTab[3];
 	std::stack<Hanoi> m_stack;
 
 public:

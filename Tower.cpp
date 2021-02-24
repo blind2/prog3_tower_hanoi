@@ -3,20 +3,16 @@
 #include<iostream>
 
 
-Tower::Tower() :m_stack{}, combinaisonTab{ 0 }{}
+Tower::Tower() :m_stack{}{}
 
 void Tower::show()
 {	
 	std::stack<Hanoi> stackCopy{ m_stack };
-	int compteur = 0;
 	
 	while (!stackCopy.empty())
 	{
-		combinaisonTab[compteur] = stackCopy.top().getType();
 		stackCopy.top().show();
-		stackCopy.pop();
-		compteur++;
-		
+		stackCopy.pop();	
 	}
 
 	std::cout << "\n"<< "\n";
@@ -24,6 +20,10 @@ void Tower::show()
 
 bool Tower::checkCombinaison()
 {
+	if (m_stack.size() == 3 && m_stack.top().getType() ==1)
+	{
+		return true;
+	}
 	return false;
 }
 
@@ -39,13 +39,19 @@ void Tower::removeHanoi()
 
 bool Tower::empty()
 {
-	if (m_stack.empty()) return true;
+	if (m_stack.empty()) 
+	{
+		return true;
+	} 
 	return false;
 }
 
 int Tower::top()
 {
-	if (m_stack.empty()) return 4;
+	if (m_stack.empty()) 
+	{
+		return 4;
+	}
 	return m_stack.top().getType();
 }
 

@@ -6,13 +6,18 @@
 class Tower
 {
 private:
-	int m_size;	
-	int combinaison[3];
+	int combinaisonTab[3];
+	std::stack<Hanoi> m_stack;
+
 public:
-	Tower(int size);
+	Tower();
 	void show();
 	bool checkCombinaison();
-	std::stack<Hanoi> stack;
+	void addHanoi(Hanoi hanoi);
+	void removeHanoi();
+	bool empty();
+	int top();
+	
 };
 #endif
 
